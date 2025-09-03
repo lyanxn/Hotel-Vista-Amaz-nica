@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservas - Hotel Vista Amazónica</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <header>Hotel Vista Amazónica</header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="habitaciones.html">Habitaciones</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="reservas.html">Reservas</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <section class="section">
+    <h2>Formulario de Reserva</h2>
+    <form>
+      <input type="text" name="nombre" placeholder="Nombre Completo" required>
+      <input type="email" name="correo" placeholder="Correo Electrónico" required>
+      <input type="tel" name="telefono" placeholder="Teléfono" required>
+      <label>Fecha de llegada:</label>
+      <input type="date" name="entrada" required>
+      <label>Fecha de salida:</label>
+      <input type="date" name="salida" required>
+      <select name="tipo" required>
+        <option value="">Seleccione tipo de habitación</option>
+        <option value="estandar">Habitación Estándar</option>
+        <option value="suite">Suite</option>
+      </select>
+      <textarea name="mensaje" rows="4" placeholder="Comentarios o requerimientos especiales"></textarea>
+      <button type="submit">Reservar</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Hotel Vista Amazónica - Todos los derechos reservados.
+  </footer>
+</body>
+</html>
